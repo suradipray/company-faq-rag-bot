@@ -1,10 +1,10 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 import os
 
-PDF_PATH = "data/company_faq.pdf"
+PDF_PATH = "data/company_handbook.pdf"
 VECTOR_DB_PATH = "vectorstore"
 
 def ingest():
